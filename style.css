@@ -1,0 +1,169 @@
+body{
+    /* Green Beach Gradient */
+background: #02AAB0, #00CDAC;
+background: -webkit-linear-gradient(90deg, #02AAB0, #00CDAC);
+background: linear-gradient(90deg, #02AAB0, #00CDAC);
+}
+
+.catalogoFull{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Catalogo{
+    margin-bottom: 3em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    border: 0.1em solid white;
+    border-radius: 2em;
+    background-color: white;
+    height: 40em;
+}
+
+.Catalogo img{
+    height: 22em;
+    width: 22em;
+    margin-top: 1em;
+    border-radius: 2em;
+}
+
+.Catalogo h2{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.Catalogo h5{
+    margin-top: -0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: gray;
+}
+
+.Catalogo h3{
+    margin-top: -0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px; /* Espacio entre los círculos */
+}
+
+.color-circle {
+    width: 2em; /* Ancho del círculo */
+    height: 2em; /* Alto del círculo */
+    border-radius: 50%; /* Hace que el div tenga forma de círculo */
+    margin-bottom: 2em;
+    border: 1px  solid black;
+}
+
+#talles{
+    border-radius: 2em;
+    height: 2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+/* Estilo general del slider */
+.slider {
+    position: relative;
+    width: 95%;
+    overflow: hidden;
+    margin-left: 0.5em;
+    margin-top: -1em;
+}
+  
+  .slides img {
+    width: 100%;
+    display: none;
+  }
+  
+  .slides img.active {
+    display: block;
+    /* Solo mostramos la imagen activa */
+  }
+  
+  /* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.prev {
+    left: -0.5em;
+}
+
+.next {
+    right: -0.5em;
+}
+
+@media (max-width: 768px){
+    .catalogoFull{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Catalogo{
+        margin-bottom: 3em;
+        margin-top: 2em;
+        width: 100%;
+        height: 42em;
+    }
+
+    .Catalogo h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+    }
+    
+    .Catalogo h5{
+        margin-top: -1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        color: gray;
+    }
+    
+    .Catalogo h3{
+        margin-top: -1em;
+        margin-bottom: 0.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.8em;
+    }
+    
+    .color-options {
+        display: flex;
+        gap: 12px; /* Espacio entre los círculos */
+    }
+    
+    .color-circle {
+        width: 2em; /* Ancho del círculo */
+        height: 2em; /* Alto del círculo */
+        border-radius: 50%; /* Hace que el div tenga forma de círculo */
+        margin-bottom: 2em;
+    }
+    
+    #talles{
+        height: 3em;
+        text-align: center;
+        margin-top: -1em;
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+}
